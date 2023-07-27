@@ -70,18 +70,27 @@ We will guide you through it, so it won’t be too tough. For this part, we will
 First of all, we will need these components:
 
 Apache
+
 MySQL
+
 PHP 5.5 and up
+
 Composer
+
+
 Apache, MySQL, and PHP are included by default in most VPS templates. Therefore you’ll only need to install Composer to continue. Once you’re done with that, you’ll need to set up the required Phalcon PHP extension. Execute the following command to do it:
 
 curl -s https://packagecloud.io/install/repositories/phalcon/stable/script.deb.sh | sudo bash
+
+
 Now that we have all the components, let’s set up Phalcon framework. We will start by getting Phalcon developer tools, which will simplify the framework usage process. Begin by navigating one directory above the domain’s root. In our example, it would be:
 
 cd /var/www
+
 Use this command to create a composer.json file:
 
 nano composer.json
+
 It will create the file and open it in a text editor interface. Paste the following content there:
 
 {
